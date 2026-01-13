@@ -1,0 +1,14 @@
+footer {
+    background-color: red;
+}
+
+footer > nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
