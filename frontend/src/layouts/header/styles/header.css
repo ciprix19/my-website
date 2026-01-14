@@ -1,37 +1,121 @@
 .main-header {
+    /* background-color: red; */
     background-color: var(--color-background);
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+    min-block-size: 5rem;
+    max-block-size: 5rem;
+}
+.primary-navigation {
+    width: 100%;
+}
+.nav-wrapper > a > img {
+    margin-left: 1rem;
 }
 
-.main-header > nav {
-    display: flex;
+.nav-menu {
+    display: none;
+    background: linear-gradient(var(--color-background));
+    width: 100%;
 }
-
-.main-header > nav > ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.main-header > nav > ul > li:nth-of-type(1) {
-    margin-right: 10rem;
-}
-
-.main-header > nav > ul > li:nth-of-type(6) {
-    margin-left: 2rem;
-}
-
-.main-header > nav > ul > li {
-    padding-block: 0.5rem;
+.nav-menu > li {
+    padding-block: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.nav-menu.active {
+    display: block;
+}
+.nav-menu.active > li {
+    outline: 1px solid var(--color-border);
+}
 
 .main-header a {
     color: var(--color-primary-text);
+}
+.main-header a:hover {
+    color: var(--color-accent);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bar {
+    display: block;
+    inline-size: 4rem;
+    height: 0.7rem;
+    margin: 0.7rem auto;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-primary-text);
+}
+
+.hamburger {
+    padding: 0rem 1rem;
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(1.4rem) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-1.4rem) rotate(-45deg);
+}
+
+@media screen and (width > 720px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .nav-menu {
+        position: static;
+        top: auto;
+        flex-direction: row;
+        display: flex;
+        background: none;
+        width: auto;
+        padding-inline: 1rem;
+    }
+    .nav-menu.active {
+        outline: none;
+        display: flex;
+    }
+    .nav-menu.active > li {
+        outline: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 1rem;
+    }
+    .nav-menu > li:nth-of-type(1) {
+        margin-left: 10rem;
+    }
+    .nav-menu > li:nth-of-type(5) {
+        margin-left: 2rem;
+    }
+
+    .primary-navigation {
+        width: auto;
+    }
 }
