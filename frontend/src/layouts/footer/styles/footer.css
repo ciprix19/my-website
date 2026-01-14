@@ -1,14 +1,21 @@
 footer {
-    background-color: red;
-}
-
-footer > nav {
+    background-color: var(--color-medium-accent);
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    border-top: 1px var(--color-border) solid;;
 }
 
 footer > nav > ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+footer li {
+    padding-block: 2rem;
+}
+
+footer a {
+    color: var(--color-background);
 }

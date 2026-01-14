@@ -1,9 +1,10 @@
 .main-header {
-    background-color: red;
+    background-color: var(--color-background);
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .main-header > nav {
@@ -14,4 +15,23 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+}
+
+.main-header > nav > ul > li:nth-of-type(1) {
+    margin-right: 10rem;
+}
+
+.main-header > nav > ul > li:nth-of-type(6) {
+    margin-left: 2rem;
+}
+
+.main-header > nav > ul > li {
+    padding-block: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header a {
+    color: var(--color-primary-text);
 }

@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    font-size: clamp(16px, 1vw, 24px);
+}
+
 :root {
     font-family: "Merriweather", system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -12,12 +16,14 @@
     --color-background: #121212;
     --color-primary-text: #E0E0E0;
     --color-secondary-text: #B0B0B0;
-    --color-border-divider: #444444;
+    --color-border: #444444;
+    --color-light-accent: #d7d7d7;
+    --color-medium-accent: #c0c0c0;
     --color-accent: #888888;
 
     color-scheme: light dark;
-    background-color: var(--color-background);
-    color: var(--color-primary-text);
+    background-color: var(--color-primary-text);
+    color: var(--color-background);
     /* background-color: #242424; */
 
     font-synthesis: none;
@@ -28,23 +34,22 @@
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: var(--color-background);
     text-decoration: inherit;
 }
 
 a:hover {
-    color: #535bf2;
+    color: var(--color-accent);
     cursor: pointer;
 }
 
 body {
     margin: 0;
-    min-width: 320px;
-    min-height: 100vh;
+    font-size: 1rem;
 }
 
 h1 {
-    font-size: 3.2em;
+    font-size: 5rem;
     line-height: 1.1;
 }
 
@@ -67,6 +72,15 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+
+section {
+    margin-block: 2rem;
 }
 
 @media (prefers-color-scheme: light) {
