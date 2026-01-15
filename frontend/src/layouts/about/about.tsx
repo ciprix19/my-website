@@ -19,7 +19,7 @@ function AboutSection() {
 
 function SkillsSection() {
     return (
-        <section>
+        <section className='gray-section'>
             <div className='two-column-layout wrapper'>
                 <img src='images/profile-pic1.jpg' alt='skills-pic'></img>
                 <div>

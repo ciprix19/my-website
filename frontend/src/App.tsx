@@ -7,6 +7,7 @@ import Landing from './layouts/landing/landing'
 import NotFound from './layouts/not-found/not-found'
 import About from './layouts/about/about'
 import Contact from './layouts/contact/contact'
+import Resume from './layouts/resume/resume'
 
 function App() {
     const [count, setCount] = useState(0);
@@ -18,10 +19,10 @@ function App() {
                 <Route path='/' element={<Landing />}></Route>
                 <Route path='/about' element={<About />}></Route>
                 {/* <Route path='/learn' element={<Learn />}></Route> */}
-                {/* <Route path='/portofolio' element={<Portofolio />}></Route> */}
+                <Route path='/resume' element={<Resume />}></Route>
                 {/* <Route path='/guitar' element={<Guitar />}></Route> */}
                 <Route path='/contact' element={<Contact />}></Route>
-                <Route path='/not-found' element={<NotFound />}></Route>
+                <Route path='*' element={<NotFound />}></Route>
             </Routes>
             <Footer></Footer>
         </BrowserRouter>

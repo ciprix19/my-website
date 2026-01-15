@@ -1,0 +1,24 @@
+.div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.mylist {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    /* transform: translateY(-80px); */
+    transition:
+        max-height 300ms ease,
+        opacity 200ms ease,
+        transform 200ms ease;
+}
+
+.mylist.active {
+    max-height: 200px;
+    opacity: 1;
+    /* transform: translateY(0); */
+}

@@ -14,17 +14,19 @@ html {
     font-weight: 400;
 
     --color-background: #121212;
-    --color-background-light: #222;
+    --color-background-medium: #1d1d1d;
+    --color-background-light: #222222;
     --color-primary-text: #E0E0E0;
     --color-secondary-text: #B0B0B0;
     --color-border: #444444;
-    --color-light-accent: #d7d7d7;
-    --color-medium-accent: #c0c0c0;
+    --color-accent-light: #d7d7d7;
+    --color-accent-medium: #c0c0c0;
     --color-accent: #888888;
+    --color-accent-strong: #555;
 
     color-scheme: light dark;
-    background-color: var(--color-primary-text);
-    color: var(--color-background);
+    background-color: var(--color-background-light);
+    color: var(--color-primary-text);
     /* background-color: #242424; */
 
     font-synthesis: none;
@@ -35,7 +37,7 @@ html {
 
 a {
     font-weight: 500;
-    color: var(--color-background);
+    color: var(--color-primary-text);
     text-decoration: inherit;
 }
 a:hover {
@@ -59,6 +61,11 @@ h3 {
     font-size: 1.5rem;
 }
 
+li {
+    font-size: 1rem;
+    list-style: none;
+}
+
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -70,11 +77,9 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
 }
-
 button:hover {
     border-color: var(--color-accent);
 }
-
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;

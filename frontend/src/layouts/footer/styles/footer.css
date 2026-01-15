@@ -1,9 +1,10 @@
 footer {
-    background-color: var(--color-medium-accent);
+    background-color: var(--color-background);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px var(--color-border) solid;;
+    border-top: 1px var(--color-border) solid;
+    padding-inline: 1rem;
 }
 
 footer > nav > ul {
@@ -14,8 +15,4 @@ footer > nav > ul {
 
 footer li {
     padding-block: 2rem;
-}
-
-footer a {
-    color: var(--color-background);
 }

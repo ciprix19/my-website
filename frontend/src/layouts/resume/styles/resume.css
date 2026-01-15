@@ -1,0 +1,87 @@
+.profile-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-section h1 {
+    text-align: center;
+}
+.profile-section span img {
+    display: inline;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    letter-spacing: clamp(0rem, 0.3vw ,0.3rem);
+    margin-bottom: 1.5rem;
+}
+.section-header::after {
+    content: '';
+    flex: 1;
+    margin-left: 0.5rem;
+    block-size: 0.1rem;
+    background: linear-gradient(to right, var(--color-border), var(--color-background-light));
+}
+.gray-section .section-header::after {
+    background: linear-gradient(to right, var(--color-border), var(--color-background-medium));
+}
+
+.card-entry {
+    display: flex;
+    padding: 1rem;
+    text-align: start;
+}
+.card-entry > div {
+    padding: 1rem;
+}
+
+/* override this so the image does not shrink */
+.icon-column > img {
+    max-inline-size: none;
+}
+.icon-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 0.3rem;
+}
+.icon-column::after {
+    content: '';
+    flex: 1;
+    margin-top: 0.4rem;
+    inline-size: 0.18rem;
+    background: linear-gradient(var(--color-accent), var(--color-accent-strong));
+}
+
+.skills-category-section .card-extend {
+    margin-block: 2rem;
+    text-align: center;
+}
+.card-extend > div > h3 {
+    padding: 1rem;
+}
+.card-extend .skills {
+    border-top: 0.2rem var(--color-accent-strong) solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.extend-button {
+    width: 100%;
+    background-color: var(--color-background-light);
+    border-top: 0.2rem var(--color-accent-strong) solid;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+@media screen and (width > 720px) {
+    .professional-path-entry {
+        padding-inline: 3rem;
+    }
+}
