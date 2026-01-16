@@ -31,30 +31,27 @@ function EducationEntry({ degree, institution, location, startDate, endDate, rel
 
 export default function EducationSection() {
     return (
-        <section>
-            <div className='wrapper'>
-                <SectionHeader title={'EDUCATIONAL PATH'} />
-                <div className='card'>
-                    <EducationEntry
-                        degree={`Master's Degree in Software Engineering`}
-                        institution={'Babes-Bolyai Faculty of Mathematics and Computer Science'}
-                        location={'Cluj-Napoca, Romania'}
-                        startDate={'October 2023'}
-                        endDate={'April 2024'}
-                        relevantCoursework={'Relevant coursework: Agile Methodologies, Programming Paradigms.'}
-                        thesis={''}
-                        />
-                    <EducationEntry
-                        degree={`Bachelor's Degree in Computer Science`}
-                        institution={'Babes-Bolyai Faculty of Mathematics and Computer Science'}
-                        location={'Cluj-Napoca, Romania'}
-                        startDate={'October 2020'}
-                        endDate={'July 2023'}
-                        relevantCoursework={'Relevant coursework: Data Structures and Algorithms, OOP, Networking, Web Development, Machine Learning.'}
-                        thesis={'Thesis: Tuner and Tab Writer for Guitar Using Note Detection Algorithms.'}
-                        />
-                </div>
+        <SectionHeader sectionColor={''} isWrapped={true} sectionTitle={'EDUCATIONAL PATH'}>
+            <div className='card'>
+                <EducationEntry
+                    degree={`Master's Degree in Software Engineering`}
+                    institution={'Babes-Bolyai Faculty of Mathematics and Computer Science'}
+                    location={'Cluj-Napoca, Romania'}
+                    startDate={'October 2023'}
+                    endDate={'April 2024'}
+                    relevantCoursework={'Relevant coursework: Agile Methodologies, Programming Paradigms.'}
+                    thesis={''}
+                    />
+                <EducationEntry
+                    degree={`Bachelor's Degree in Computer Science`}
+                    institution={'Babes-Bolyai Faculty of Mathematics and Computer Science'}
+                    location={'Cluj-Napoca, Romania'}
+                    startDate={'October 2020'}
+                    endDate={'July 2023'}
+                    relevantCoursework={'Relevant coursework: Data Structures and Algorithms, OOP, Networking, Web Development, Machine Learning.'}
+                    thesis={'Thesis: Tuner and Tab Writer for Guitar Using Note Detection Algorithms.'}
+                    />
             </div>
-        </section>
+        </SectionHeader>
     );
 }

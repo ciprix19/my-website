@@ -1,7 +1,18 @@
 
-
-export default function SectionHeader({ title } : { title : String} ) {
+type SectionHeaderType = {
+    sectionColor: string;
+    isWrapped: boolean;
+    sectionTitle: string;
+    children: any;
+}
+export default function SectionHeader({ sectionColor, isWrapped, sectionTitle, children } : SectionHeaderType) {
     return (
-        <h3 className='section-header'>{title}</h3>
+        <section className={sectionColor === 'gray' ? 'gray-section' : ''}>
+            <div className={isWrapped ? 'wrapper' : ''}>
+                <h3 className='section-header'>{sectionTitle}</h3>
+                {children}
+            </div>
+        </section>
     );
 }
+

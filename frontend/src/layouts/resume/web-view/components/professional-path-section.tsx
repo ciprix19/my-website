@@ -27,28 +27,25 @@ function ProfessionalPathEntry({ position, company, location, startDate, endDate
 }
 export default function ProfessionalPathSection() {
     return (
-        <section className='gray-section'>
-            <div className='wrapper'>
-                <SectionHeader title={'PROFESSIONAL PATH'} />
-                <div className='card'>
-                    <ProfessionalPathEntry
-                        position={'Cloud Engineer L1 - GCP'}
-                        company={'Cognizant Softvision'}
-                        location={'Bucharest, Romania'}
-                        startDate={'May 2024'}
-                        endDate={'September 2025'}
-                        description={'Provided advanced technical support on over 200 tickets for Apigee X and Apigee Hybrid platforms across both production and development environments.'}
-                        />
-                    <ProfessionalPathEntry
-                        position={'Frontend Developer Intern'}
-                        company={'Accenture Industrial Software Solution SA'}
-                        location={'Cluj-Napoca, Romania'}
-                        startDate={'August 2022'}
-                        endDate={'September 2022'}
-                        description={'Demonstrated leadership in the design and development of a secure, Angular-based frontend application for API key management.'}
-                        />
-                </div>
+        <SectionHeader sectionColor={'gray'} isWrapped={true} sectionTitle={'PROFESSIONAL PATH'}>
+            <div className='card'>
+                <ProfessionalPathEntry
+                    position={'Cloud Engineer L1 - GCP'}
+                    company={'Cognizant Softvision'}
+                    location={'Bucharest, Romania'}
+                    startDate={'May 2024'}
+                    endDate={'September 2025'}
+                    description={'Provided advanced technical support on over 200 tickets for Apigee X and Apigee Hybrid platforms across both production and development environments.'}
+                    />
+                <ProfessionalPathEntry
+                    position={'Frontend Developer Intern'}
+                    company={'Accenture Industrial Software Solution SA'}
+                    location={'Cluj-Napoca, Romania'}
+                    startDate={'August 2022'}
+                    endDate={'September 2022'}
+                    description={'Demonstrated leadership in the design and development of a secure, Angular-based frontend application for API key management.'}
+                    />
             </div>
-        </section>
+        </SectionHeader>
     );
 }

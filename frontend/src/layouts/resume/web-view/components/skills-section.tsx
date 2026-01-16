@@ -42,15 +42,12 @@ function SkillsForCategory({ category } : { category: string }) {
 
 export default function SkillsCategoryDisplay() {
     return (
-        <section className='gray-section'>
-            <div className='wrapper'>
-                <SectionHeader title={'CORE ARSENAL'} />
-                <div className='skills-category-section'>
-                    {Object.keys(skillsCategories).map(category => {
-                        return (<SkillsForCategory key={category} category={category}/>);
-                    })}
-                </div>
+        <SectionHeader sectionColor={'gray'} isWrapped={true} sectionTitle={'CORE ARSENAL'}>
+            <div className='skills-category-section'>
+                {Object.keys(skillsCategories).map(category => {
+                    return (<SkillsForCategory key={category} category={category}/>);
+                })}
             </div>
-        </section>
+        </SectionHeader>
     );
 }
