@@ -67,7 +67,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* skills are minimized initially */
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    /* translateY: -8px; */
+    transition:
+        max-height 500ms ease,
+        padding 500ms ease,
+        opacity 300ms ease;
+}
+.card-extend .skills.active {
+    max-height: 20rem;
     padding: 2rem;
+    opacity: 1;
 }
 
 .extend-button {

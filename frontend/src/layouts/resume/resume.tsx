@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './styles/resume.css'
 
 function SectionHeader({ title } : { title : String} ) {
@@ -145,23 +145,23 @@ const skillsCategories : Record<string, string[]> = {
 };
 function SkillsEntry({ skillName, info } : SkillEntryType) {
     return (
-        <div>{skillName}</div>
+        <div className='card-simple'>{skillName}</div>
     );
 }
-//todo -> make it open
 function SkillsForCategory({ category } : { category: string }) {
     const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div className='card-extend'>
             <div>
                 <h3>{category}</h3>
-                <div className='skills'>
+                <div className={`skills ${isOpen ? 'active' : ''}`}>
                     {skillsCategories[category].map(skill => {
                         return (<SkillsEntry key={skill} skillName={skill} info={''}></SkillsEntry>)
                     })}
                 </div>
             </div>
-            <button className='extend-button' onClick={() => setIsOpen(true)}>˅</button>
+            <button className='extend-button' onClick={() => setIsOpen(!isOpen)}>{isOpen ? '˄' : '˅'}</button>
         </div>
     );
 }
