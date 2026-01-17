@@ -1,4 +1,4 @@
-import SectionTwoColumnType from './components/section-two-column';
+import SectionTwoColumnImage from './components/section-two-column-image';
 import './styles/about.css'
 
 function AboutSection() {
@@ -6,7 +6,7 @@ function AboutSection() {
         <section>
             <div className='two-column-layout wrapper'>
                 <div>
-                    <h1>about</h1>
+                    <h1>About</h1>
                     <br></br>
                     <h2>I'm a software developer based in Bucharest, Romania.</h2>
                     <br></br>
@@ -22,7 +22,7 @@ export default function About() {
     return (
         <main className='about'>
             <AboutSection></AboutSection>
-            <SectionTwoColumnType
+            <SectionTwoColumnImage
                 sectionColor='gray' isWrapped={true} isImageFirst={false}
                 img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
                 sectionSubTitle={'Area of expertise'}
@@ -33,7 +33,7 @@ export default function About() {
                     'Cloud and API Platforms'
                 ]}
             />
-            <SectionTwoColumnType
+            <SectionTwoColumnImage
                 sectionColor='' isWrapped={true} isImageFirst={true}
                 img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
                 sectionSubTitle={'Random facts'}

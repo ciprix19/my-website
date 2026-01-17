@@ -1,10 +1,20 @@
 .landing-section {
+    padding-block: 1rem;
+}
+.landing-section > section > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.1rem;
 }
-.landing-section {
-    text-align: center;
+
+.div-buttons {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+}
+.div-buttons button {
+    flex: 1;
+    padding: 1rem;
+    max-inline-size: 20rem;
 }
