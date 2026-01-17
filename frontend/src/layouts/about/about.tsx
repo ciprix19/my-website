@@ -1,3 +1,4 @@
+import SectionTwoColumnType from './components/section-two-column';
 import './styles/about.css'
 
 function AboutSection() {
@@ -17,52 +18,32 @@ function AboutSection() {
     );
 }
 
-function SkillsSection() {
-    return (
-        <section className='gray-section'>
-            <div className='two-column-layout wrapper'>
-                <img src='images/profile-pic1.jpg' alt='skills-pic'></img>
-                <div>
-                    <h2>Area of expertise</h2>
-                    <br></br>
-                    <ul>
-                        <li>Backend and Scripting</li>
-                        <li>Frontend Technologies</li>
-                        <li>Database Management</li>
-                        <li>Cloud and API Platforms</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function RandomFacts() {
-    return (
-        <section>
-            <div className='two-column-layout wrapper'>
-                <div>
-                    <h2>Random facts</h2>
-                    <br></br>
-                    <ul>
-                        <li>Guitar nerd</li>
-                        <li>I love to cook</li>
-                        <li>Spending too much time in video games</li>
-                        <li>Horror movies enthusiast</li>
-                    </ul>
-                </div>
-                <img src='images/profile-pic1.jpg' alt='skills-pic'></img>
-            </div>
-        </section>
-    );
-}
-
 export default function About() {
     return (
         <main className='about'>
             <AboutSection></AboutSection>
-            <SkillsSection></SkillsSection>
-            <RandomFacts></RandomFacts>
+            <SectionTwoColumnType
+                sectionColor='gray' isWrapped={true} isImageFirst={false}
+                img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
+                sectionSubTitle={'Area of expertise'}
+                list={[
+                    'Backend and Scripting',
+                    'Frontend Technologies',
+                    'Database Management',
+                    'Cloud and API Platforms'
+                ]}
+            />
+            <SectionTwoColumnType
+                sectionColor='' isWrapped={true} isImageFirst={true}
+                img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
+                sectionSubTitle={'Random facts'}
+                list={[
+                    'Guitar nerd',
+                    'I love to cook',
+                    'Spending too much time in video games',
+                    'Horror genre enthusiast'
+                ]}
+            />
         </main>
     );
 }

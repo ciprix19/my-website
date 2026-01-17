@@ -1,4 +1,4 @@
-
+/*
 .skills-category-section .card-extend {
     margin-block: 2rem;
     text-align: center;
@@ -11,18 +11,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* skills are minimized initially */
     overflow: hidden;
-    max-height: 0px;
+    max-height: 0;
     opacity: 0;
-    /* translateY: -8px; */
     transition:
         max-height 500ms ease,
         padding 500ms ease,
         opacity 300ms ease;
 }
 .card-extend .skills.active {
-    max-height: 20rem;
+    max-height: 30rem;
     padding: 2rem;
     opacity: 1;
 }
@@ -35,4 +33,4 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
-}
+} */

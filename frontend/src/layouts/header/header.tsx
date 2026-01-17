@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import './styles/header.css'
-import { useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const ref = useRef<HTMLUListElement>(null);
 
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen);
@@ -19,7 +20,7 @@ export default function Header() {
                     <span className="bar"></span>
                 </button>
                 <nav className='primary-navigation'>
-                    <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+                    <ul ref={ref} className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                         <li><Link to='/about' onClick={() => setIsMenuOpen(false)}>about</Link></li>
                         <li><Link to='/resume' onClick={() => setIsMenuOpen(false)}>resume</Link></li>
                         <li><Link to='/guitar' onClick={() => setIsMenuOpen(false)}>guitar</Link></li>

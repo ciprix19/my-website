@@ -2,3 +2,9 @@
     inline-size: 100%;
     block-size: 1080px;
 }
+
+.pdf-view .card-expand .expandable.active {
+    padding: 2rem;
+    opacity: 1;
+    max-height: 80vh;
+}

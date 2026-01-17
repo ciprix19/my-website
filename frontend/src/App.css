@@ -39,14 +39,6 @@
     border: 0.2rem solid var(--color-border);
     transition: 300ms;
 }
-.card-extend {
-    background: linear-gradient(to top, var(--color-background-light) 30%, var(--color-border));
-    border-top: 0.2rem solid var(--color-border);
-    border-left: 0.2rem solid var(--color-border);
-    border-right: 0.2rem solid var(--color-border);
-    border-radius: 2rem;
-
-}
 .card-simple:hover {
     transform: scale(1.2);
 }

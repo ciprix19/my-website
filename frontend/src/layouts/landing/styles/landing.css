@@ -1,0 +1,10 @@
+.landing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.1rem;
+}
+.landing-section {
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SectionHeader from "../../components/section-header";
 import './styles/skills-section.css'
+import CardButtonExpand from "../../components/card-expand";
 
 type SkillEntryType = {
     skillName: String,
@@ -26,17 +27,11 @@ function SkillsForCategory({ category } : { category: string }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='card-extend'>
-            <div>
-                <h3>{category}</h3>
-                <div className={`skills ${isOpen ? 'active' : ''}`}>
-                    {skillsCategories[category].map(skill => {
-                        return (<SkillsEntry key={skill} skillName={skill} info={''}></SkillsEntry>)
-                    })}
-                </div>
-            </div>
-            <button className='extend-button' onClick={() => setIsOpen(!isOpen)}>{isOpen ? '˄' : '˅'}</button>
-        </div>
+        <CardButtonExpand title={category}>
+            {skillsCategories[category].map(skill => {
+                return (<SkillsEntry key={skill} skillName={skill} info={''}></SkillsEntry>)
+            })}
+        </CardButtonExpand>
     );
 }
 
