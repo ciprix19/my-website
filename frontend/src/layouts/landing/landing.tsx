@@ -3,13 +3,10 @@ import './styles/landing.css'
 
 export default function Landing() {
     return (
-        <main className="landing-section">
+        <main className="landing-section center-main">
             <section className='two-column-layout wrapper'>
+                <h1>Building Digital Features</h1>
                 <div>
-                    <h1>Building Digital Features</h1>
-                </div>
-                <div>
-                    <br></br>
                     <h2>Software Developer specialized in crafting high-performance, immersive web experiences using modern architecture.</h2>
                     <br></br>
                     <h2>Let's work together!</h2>

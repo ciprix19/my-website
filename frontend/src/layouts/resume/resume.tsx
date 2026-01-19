@@ -28,7 +28,7 @@ function ButtonResumeMode({ description, mode, onClickSetMode, isDisabled } : { 
     }
 
     return (
-        <button className='card' onClick={handleOnClick} disabled={isDisabled}>{description}</button>
+        <button className='button-card' onClick={handleOnClick} disabled={isDisabled}>{description}</button>
     );
 }
 function ModeButtonsSection({ mode, onClickSetMode } : { mode : String, onClickSetMode : any }) {

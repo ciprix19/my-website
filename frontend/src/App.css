@@ -1,15 +1,15 @@
 #root {
-    /* max-width: 1280px; */
-    margin: 0 auto;
-    /* padding: 2rem; */
     text-align: center;
+    block-size: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* classes that are useful for all pages go here */
 .two-column-layout {
     display: grid;
     place-items: center;
 }
-
 .three-column-layout {
     display: grid;
     place-items: center;
@@ -41,6 +41,12 @@
 }
 .card-simple:hover {
     transform: scale(1.2);
+}
+.button-card {
+    background: var(--color-accent-strong);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--color-border);
 }
 
 @media screen and (width > 720px) {

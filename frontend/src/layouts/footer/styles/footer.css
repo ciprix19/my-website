@@ -16,3 +16,7 @@ footer > nav > ul {
 footer li {
     padding-block: 2rem;
 }
+
+footer {
+    flex-shrink: 0;
+}

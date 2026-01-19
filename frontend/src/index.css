@@ -6,6 +6,7 @@
 
 html {
     font-size: clamp(16px, 1vw, 24px);
+    height: 100%;
 }
 
 :root {
@@ -22,12 +23,11 @@ html {
     --color-accent-light: #d7d7d7;
     --color-accent-medium: #c0c0c0;
     --color-accent: #888888;
-    --color-accent-strong: #555;
+    --color-accent-strong: #555555;
 
     color-scheme: light dark;
     background-color: var(--color-background-light);
     color: var(--color-primary-text);
-    /* background-color: #242424; */
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -35,19 +35,22 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-    font-weight: 500;
-    color: var(--color-primary-text);
-    text-decoration: inherit;
-}
-a:hover {
-    color: var(--color-accent);
-    cursor: pointer;
-}
-
 body {
     margin: 0;
     font-size: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* stretches the page on the whole viewport */
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    display: grid;
 }
 
 h1 {
@@ -65,6 +68,16 @@ li {
     list-style: none;
 }
 
+a {
+    font-weight: 500;
+    color: var(--color-primary-text);
+    text-decoration: inherit;
+}
+a:hover {
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
 button {
     border-radius: 1rem;
     border: 0.2rem solid transparent;
@@ -73,6 +86,7 @@ button {
     font-weight: 500;
     font-family: inherit;
     background-color: var(--color-background);
+    color: var(--color-primary-text);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -80,6 +94,9 @@ button:hover {
     background-color: var(--color-accent-strong);
     background-color: var(--color-background-medium);
     border-color: var(--color-border);
+}
+button:disabled {
+    background-color: var(--color-background-medium);
 }
 
 img {
