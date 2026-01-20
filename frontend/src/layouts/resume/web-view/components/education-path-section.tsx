@@ -1,4 +1,5 @@
 import SectionHeader from "../../components/section-header";
+import './styles/education-path-section.css'
 
 type EducationEntryType = {
     degree: String,
@@ -14,7 +15,8 @@ function EducationEntry({ degree, institution, location, startDate, endDate, rel
     return (
         <div className='card-entry'>
             <div className='icon-column'>
-                <img src='images/insta-32x32.png' alt='job' />
+
+                {/* <img src='images/insta-32x321.png' alt='job' /> */}
             </div>
             <div>
                 <h3>{degree}</h3>

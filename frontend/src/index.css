@@ -63,6 +63,15 @@ h2 {
 h3 {
     font-size: 1.5rem;
 }
+input, textarea {
+    color: var(--color-primary-text);
+    border: 0.2rem solid var(--color-accent-strong);
+    outline: none;
+    font-family: "Merriweather", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible {
+    border: 0.2rem solid var(--color-accent-medium);
+}
 
 li {
     list-style: none;

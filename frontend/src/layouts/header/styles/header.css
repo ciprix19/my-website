@@ -114,3 +114,9 @@
         width: auto;
     }
 }
+
+@media screen and (width > 1280px) {
+    .nav-wrapper > a > img {
+        margin-left: 0;
+    }
+}
