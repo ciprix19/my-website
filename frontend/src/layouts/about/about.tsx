@@ -19,8 +19,9 @@ function AboutSection() {
 }
 
 export default function About() {
+
     return (
-        <main className='about'>
+        <main id='about' className='about'>
             <AboutSection></AboutSection>
             <SectionTwoColumnImage
                 sectionColor='gray' isWrapped={true} isImageFirst={false}

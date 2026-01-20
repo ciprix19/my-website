@@ -12,7 +12,7 @@ function ProfessionalPathEntry({ position, company, location, startDate, endDate
     return (
         <div className='card-entry'>
             <div className='icon-column'>
-                {/* <img src='images/insta-32x32.png' alt='job' /> */}
+                <img src='images/insta-32x32.png' alt='job' />
             </div>
             <div>
                 <h3>{position}</h3>

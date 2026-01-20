@@ -11,19 +11,23 @@ import Resume from './layouts/resume/resume'
 
 function App() {
     return (
+        //to do: about si resume pe aceeasi pagina
+        // skills trebuie sa fie initial deschise
+        //
         <BrowserRouter>
             <div className='content'>
                 <Header></Header>
                 <Routes>
                     <Route path='/' element={<Landing />}></Route>
                     <Route path='/about' element={<About />}></Route>
-                    {/* <Route path='/learn' element={<Learn />}></Route> */}
                     <Route path='/resume' element={<Resume />}></Route>
                     {/* <Route path='/guitar' element={<Guitar />}></Route> */}
                     <Route path='/contact' element={<Contact />}></Route>
                     <Route path='*' element={<NotFound />}></Route>
                 </Routes>
             </div>
+            <About />
+            <Resume />
             <Footer></Footer>
         </BrowserRouter>
     )

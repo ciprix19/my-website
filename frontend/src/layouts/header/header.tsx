@@ -21,6 +21,7 @@ export default function Header() {
                 </button>
                 <nav className='primary-navigation'>
                     <ul ref={ref} className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+                        <li><a href='#about'>aboutabout</a></li>
                         <li><Link to='/about' onClick={() => setIsMenuOpen(false)}>about</Link></li>
                         <li><Link to='/resume' onClick={() => setIsMenuOpen(false)}>resume</Link></li>
                         {/* <li><Link to='/guitar' onClick={() => setIsMenuOpen(false)}>guitar</Link></li> */}

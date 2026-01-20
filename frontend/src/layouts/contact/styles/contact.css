@@ -6,6 +6,7 @@
 
 .field textarea {
     block-size: 10rem;
+    padding: 0.5rem;
 }
 
 .two-column {

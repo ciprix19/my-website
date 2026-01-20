@@ -1,6 +1,14 @@
+import type { MouseEvent } from 'react';
+import './styles/contact.css'
 
 export default function Contact() {
+
+    function handleSubmitButton(e: MouseEvent<HTMLButtonElement>) {
+        e.preventDefault();
+    }
+
     return (
+        //todo socials div
         <main className="center-main">
             {/* <section className='two-column-layout wrapper'> */}
             <section className='two-column wrapper'>
@@ -15,6 +23,7 @@ export default function Contact() {
                             <label>Tell me your thoughts :D</label>
                             <textarea></textarea>
                         </div>
+                        <button onClick={e => handleSubmitButton(e)}>Submit</button>
                     </form>
                 </div>
                 <img src='sd' alt='contact-img'></img>
