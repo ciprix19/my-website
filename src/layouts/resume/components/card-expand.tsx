@@ -12,12 +12,10 @@ export default function CardButtonExpand({ title, children } : CardButtonExpandT
 
     return (
         <div className='card-expand'>
-            {/* <div> */}
             <h3>{title}</h3>
             <div className={`expandable ${isOpen ? 'active' : ''}`}>
                 {children}
             </div>
-            {/* </div> */}
             <button className='expand-button' onClick={() => setIsOpen(!isOpen)}>{isOpen ? '˄' : '˅'}</button>
         </div>
     );

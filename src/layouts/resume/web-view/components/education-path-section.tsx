@@ -32,6 +32,7 @@ function EducationEntry({ degree, institution, location, startDate, endDate, rel
 
 export default function EducationSection() {
     return (
+        //todo remove sectionColor and use nth-of-type(2n / 2n + 1)
         <SectionHeader sectionColor={''} isWrapped={true} sectionTitle={'EDUCATIONAL PATH'}>
             <div className='card'>
                 <EducationEntry
