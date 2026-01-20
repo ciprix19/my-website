@@ -1,4 +1,4 @@
-import { useEffect, useState, type Dispatch } from 'react';
+import { useState } from 'react';
 import './styles/resume.css'
 import WebView from './web-view/webview';
 import PdfView from './pdf-view/pdfview';

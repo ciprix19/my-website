@@ -1,6 +1,5 @@
-import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import './styles/card-expand.css'
-import ResizableDiv from "./resizable-div";
 
 type CardButtonExpandType = {
     title: string;
