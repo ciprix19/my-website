@@ -17,6 +17,10 @@
     place-self: center;
 }
 
+.two-column button {
+
+}
+
 .social {
     display: flex;
     align-items: center;
@@ -24,6 +28,8 @@
     margin-block: 1rem;
     margin-left: 1rem;
 }
+
+
 
 @media screen and (width > 720px) {
     .two-column {

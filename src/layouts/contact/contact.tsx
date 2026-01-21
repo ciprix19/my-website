@@ -38,7 +38,7 @@ export default function Contact() {
                             <label>Tell me your thoughts :D</label>
                             <textarea></textarea>
                         </div>
-                        <button onClick={e => handleSubmitButton(e)}>Submit</button>
+                        <button className='button-card' onClick={e => handleSubmitButton(e)}>Submit</button>
                     </form>
                 </div>
                 <div className='socials-div'>

@@ -39,7 +39,6 @@
 }
 .button-card {
     background: var(--color-accent-strong);
-    padding: 2rem;
     border-radius: 2rem;
     border: 0.2rem solid var(--color-border);
 }
