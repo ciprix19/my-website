@@ -16,7 +16,7 @@ export default function SectionTwoColumnImage({ isWrapped, isImageFirst, img, se
             <div className={`two-column-layout ${isWrapped ? 'wrapper' : ''}`}>
                 {isImageFirst ? (
                     <>
-                        <img src={img.source} alt={img.alt}></img>
+                        <img className='img-border' src={img.source} alt={img.alt}></img>
                         <div>
                             <h2>{sectionSubTitle}</h2>
                             <br></br>
@@ -38,7 +38,7 @@ export default function SectionTwoColumnImage({ isWrapped, isImageFirst, img, se
                                 ))}
                             </ul>
                         </div>
-                        <img src={img.source} alt={img.alt}></img>
+                        <img className='img-border' src={img.source} alt={img.alt}></img>
                     </>
                 )}
             </div>

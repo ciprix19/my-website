@@ -1,41 +1,24 @@
-import { useState } from 'react';
 import './styles/resume.css'
 import WebView from './web-view/webview';
-import PdfView from './pdf-view/pdfview';
-
-function ButtonResumeMode({ description, mode, onClickSetMode, isDisabled } : { description: String, mode: String, onClickSetMode: any, isDisabled: boolean }) {
-
-    function handleOnClick() {
-        if (mode === 'web') {
-            onClickSetMode('pdf');
-        } else {
-            onClickSetMode('web');
-        }
-    }
-
-    return (
-        <button className='button-card' onClick={handleOnClick} disabled={isDisabled}>{description}</button>
-    );
-}
-function ModeButtonsSection({ mode, onClickSetMode } : { mode : String, onClickSetMode : any }) {
-    return (
-        <section className='mode-buttons-section'>
-            <div className='div-buttons'>
-                <ButtonResumeMode description={'Web interactive'} mode={mode} onClickSetMode={onClickSetMode} isDisabled={mode === 'web' ? true : false} />
-                <ButtonResumeMode description={'Classic PDF'} mode={mode} onClickSetMode={onClickSetMode} isDisabled={mode === 'pdf' ? true : false} />
-            </div>
-        </section>
-    );
-}
 
 export default function Resume() {
-    const [mode, setMode] = useState('web');
+
+    function handleOnClick() {
+
+    }
 
     return (
         <section id='resume'>
             <h1>Resume</h1>
-            <ModeButtonsSection mode={mode} onClickSetMode={setMode}/>
-            {mode === 'web' ? <WebView /> : <PdfView />}
+            <section className='mode-buttons-section'>
+                <div className='div-buttons'>
+                    <button className='button-card' disabled={true}>Web interactive</button>
+                    <a href='pdf/mycv.pdf' rel='noopener noreferrer' target='_blank'>
+                        <button className='button-card' onClick={handleOnClick}>Open PDF</button>
+                    </a>
+                </div>
+            </section>
+            <WebView />
         </section>
     );
 }

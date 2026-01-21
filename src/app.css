@@ -22,7 +22,6 @@
 .card {
     box-shadow: 0 0 0.3rem var(--color-primary-text);
     background: var(--color-accent-strong);
-    padding: 2rem;
     border-radius: 2rem;
     border: 0.2rem solid var(--color-border);
 }
@@ -44,14 +43,17 @@
     border-radius: 2rem;
     border: 0.2rem solid var(--color-border);
 }
+.img-border {
+    border: 0.5rem;
+    border-radius: 2rem;
+}
 
 .icon {
   width: 32px;
 }
 
-.icon:hover {
+.social-media:hover {
     opacity: 0.5;
-  color: #121212;
 }
 
 @media screen and (width > 720px) {
@@ -64,6 +66,9 @@
     }
     .three-column-layout {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card {
+        padding: 2rem;
     }
 }
 

@@ -12,7 +12,7 @@ function AboutSection() {
                     <br></br>
                     <p>I enjoy turning ideas into reality, solving complex problems, and constantly learning new technologies. When I'm not coding, you can usually find me playing guitar and exploring new video games.</p>
                 </div>
-                <img src='images/profile-pic.jpg1' alt='profile-pic'></img>
+                <img src='images/icons/robot.svg1' alt='profile-pic'></img>
             </div>
         </section>
     );
@@ -25,7 +25,7 @@ export default function About() {
             <AboutSection></AboutSection>
             <SectionTwoColumnImage
                 isWrapped={true} isImageFirst={true}
-                img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
+                img={{ source: 'images/area-of-expertise.jpg', alt: 'skill-pic' }}
                 sectionSubTitle={'Area of expertise'}
                 list={[
                     'Backend and Scripting',
@@ -36,7 +36,7 @@ export default function About() {
             />
             <SectionTwoColumnImage
                 isWrapped={true} isImageFirst={false}
-                img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
+                img={{ source: 'images/guitar.jpg', alt: 'skill-pic' }}
                 sectionSubTitle={'Random facts'}
                 list={[
                     'Guitar nerd',

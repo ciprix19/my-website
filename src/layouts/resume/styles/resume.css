@@ -17,13 +17,21 @@
 
 .div-buttons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 2rem;
 }
 .div-buttons button {
     flex: 1;
     padding: 1rem;
     max-inline-size: 20rem;
+}
+.div-buttons a {
+    display: flex;
+    flex: 1;
+    max-inline-size: 20rem;
+}
+.mode-buttons-section {
+    padding-bottom: 0;
 }
 
 @media screen and (width > 720px) {

@@ -11,10 +11,22 @@
 
 .two-column {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-/* hell yea */
 .two-column .socials-div {
     place-self: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+    margin-left: 1rem;
+}
+
+@media screen and (width > 720px) {
+    .two-column {
+        grid-template-columns: 1fr 1fr;
+    }
 }

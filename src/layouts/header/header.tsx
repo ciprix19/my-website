@@ -28,22 +28,22 @@ export default function Header() {
                             <ul className='socials'>
                                 <li>
                                     <a href='https://www.linkedin.com/in/ciprix19/' target='_blank'>
-                                        <img className='icon' src='images/icons/linkedin.svg' alt='linkedin'></img>
+                                        <img className='icon social-media' src='images/icons/linkedin.svg' alt='linkedin'></img>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='https://github.com/ciprix19' target='_blank'>
-                                        <img className='icon' src='images/icons/github.svg' alt='github'></img>
+                                        <img className='icon social-media' src='images/icons/github.svg' alt='github'></img>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='https://www.instagram.com/cipri_.b/' target='_blank'>
-                                        <img className='icon' src='images/icons/insta.svg' alt='insta'></img>
+                                        <img className='icon social-media' src='images/icons/instagram.svg' alt='instagram'></img>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='https://www.facebook.com/cipri.barbuta/' target='_blank'>
-                                        <img className='icon' src='images/icons/facebook.svg' alt='facebook'></img>
+                                        <img className='icon social-media' src='images/icons/facebook.svg' alt='facebook'></img>
                                     </a>
                                 </li>
                             </ul>

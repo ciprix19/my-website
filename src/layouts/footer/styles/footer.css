@@ -4,10 +4,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     border-top: 1px var(--color-border) solid;
-    padding-inline: 1rem;
+    padding: 2rem;
 }
 
-footer > nav > ul {
+/* footer > nav > ul {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -19,4 +19,4 @@ footer li {
 
 footer {
     flex-shrink: 0;
-}
+} */
