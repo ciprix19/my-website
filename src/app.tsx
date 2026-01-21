@@ -8,9 +8,8 @@ import Resume from './layouts/resume/resume'
 
 function App() {
     return (
-        //to do: about si resume pe aceeasi pagina
-        // skills trebuie sa fie initial deschise
-        //
+        // to do: linkedin si github doar sus
+        // svg edu and prof
 
         <>
             <Header />

@@ -41,6 +41,7 @@
     background: var(--color-accent-strong);
     border-radius: 2rem;
     border: 0.2rem solid var(--color-border);
+    display: block;
 }
 .img-border {
     border: 0.5rem;

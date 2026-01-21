@@ -1,11 +1,9 @@
 import './styles/resume.css'
 import WebView from './web-view/webview';
 
+
+
 export default function Resume() {
-
-    function handleOnClick() {
-
-    }
 
     return (
         <section id='resume'>
@@ -13,8 +11,9 @@ export default function Resume() {
             <section className='mode-buttons-section'>
                 <div className='div-buttons'>
                     <button className='button-card' disabled={true}>Web interactive</button>
-                    <a href='pdf/mycv.pdf' rel='noopener noreferrer' target='_blank'>
-                        <button className='button-card' onClick={handleOnClick}>Open PDF</button>
+                    <a className='button-card' href='pdf/mycv.pdf' rel='noopener noreferrer' target='_blank'>
+                        {/* <button className='button-card'>Open PDF</button> */}
+                        <span>Open PDF</span>
                     </a>
                 </div>
             </section>

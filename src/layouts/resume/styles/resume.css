@@ -29,6 +29,15 @@
     display: flex;
     flex: 1;
     max-inline-size: 20rem;
+    text-decoration: none;
+}
+.div-buttons a:hover {
+    /* https://stackoverflow.com/questions/22559756/changing-hover-to-touch-click-for-mobile-devices */
+    color: var(--color-primary-text);
+    background-color: var(--color-background-medium);
+}
+.div-buttons > a > span {
+    margin: auto;
 }
 .mode-buttons-section {
     padding-bottom: 0;

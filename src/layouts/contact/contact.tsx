@@ -26,8 +26,10 @@ export default function Contact() {
 
     return (
         <section id='contact'>
-            <div className='wrapper two-column'>
-                <div>
+            <div className='wrapper'>
+
+             <h2>Contact</h2>
+                {/* <div>
                     <h1>Contact</h1>
                     <form className='contact-form'>
                         <div className='field'>
@@ -40,15 +42,15 @@ export default function Contact() {
                         </div>
                         <button className='button-card' onClick={e => handleSubmitButton(e)}>Submit</button>
                     </form>
-                </div>
+                </div> */}
                 <div className='socials-div'>
                     <h2>{`You can also find me on:`}</h2>
-                    <SocialsDiv
+                    {/* <SocialsDiv
                         linkToPlatform='https://www.linkedin.com/in/ciprix19/'
                         socialPlatform='Linkedin'/>
                     <SocialsDiv
                         linkToPlatform='https://github.com/ciprix19'
-                        socialPlatform='Github'/>
+                        socialPlatform='Github'/> */}
                     <SocialsDiv
                         linkToPlatform='https://www.instagram.com/cipri_.b/'
                         socialPlatform='Instagram'/>

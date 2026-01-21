@@ -7,7 +7,7 @@ type CardButtonExpandType = {
 }
 //todo: remove max-height from the card-expand and implement dynamic height computation
 export default function CardButtonExpand({ title, children } : CardButtonExpandType) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div className='card-expand'>

@@ -54,8 +54,8 @@
 
 .bar {
     display: block;
-    inline-size: 4rem;
-    height: 0.7rem;
+    inline-size: 2rem;
+    height: 0.3rem;
     margin: 0.7rem auto;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
@@ -68,13 +68,13 @@
     cursor: pointer;
 }
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(1.4rem) rotate(45deg);
+    transform: translateY(1.2rem) rotate(45deg);
 }
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-1.4rem) rotate(-45deg);
+    transform: translateY(-1.2rem) rotate(-45deg);
 }
 
 @media screen and (width > 720px) {
