@@ -19,10 +19,6 @@
     max-inline-size: 1280px;
     inline-size: 100%;
 }
-.gray-section {
-    background-color: var(--color-background-medium);
-    outline: 0.1rem var(--color-border) solid;
-}
 .card {
     box-shadow: 0 0 0.3rem var(--color-primary-text);
     background: var(--color-accent-strong);
@@ -47,6 +43,15 @@
     padding: 2rem;
     border-radius: 2rem;
     border: 0.2rem solid var(--color-border);
+}
+
+.icon {
+  width: 32px;
+}
+
+.icon:hover {
+    opacity: 0.5;
+  color: #121212;
 }
 
 @media screen and (width > 720px) {

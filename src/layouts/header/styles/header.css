@@ -2,6 +2,7 @@
     /* background-color: red; */
     background-color: var(--color-background);
     position: sticky;
+    z-index: 10;
     top: 0;
     display: flex;
     justify-content: center;
@@ -48,7 +49,7 @@
 .socials {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .bar {

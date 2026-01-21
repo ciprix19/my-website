@@ -11,6 +11,10 @@
     display: inline;
 }
 
+#resume h1 {
+    text-align: center;
+}
+
 .div-buttons {
     display: flex;
     justify-content:center;

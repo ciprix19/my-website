@@ -9,25 +9,34 @@ export default function Contact() {
 
     return (
         //todo socials div
-        <main className="center-main">
-            {/* <section className='two-column-layout wrapper'> */}
-            <section className='two-column wrapper'>
-                <div className='contact-div'>
-                    <h1>Contact</h1>
-                    <form className='contact-form'>
-                        <div className='field'>
-                            <label>Enter your email:</label>
-                            <input type='text'></input>
+        <section id='contact'>
+            <h1>Contact</h1>
+            <div className='two-column wrapper'>
+                <form className='contact-form'>
+                    <div className='field'>
+                        <label>Enter your email:</label>
+                        <input type='text'></input>
+                    </div>
+                    <div className='field'>
+                        <label>Tell me your thoughts :D</label>
+                        <textarea></textarea>
+                    </div>
+                    <button onClick={e => handleSubmitButton(e)}>Submit</button>
+                </form>
+                <div className='socials-div'>
+                    <h2>{`Check my socials as well :)`}</h2>
+                    <div className='two-column-layout'>
+                        <div>
+                            <img className='icon' src='images/icons/linkedin.svg' alt='linkedin'></img>
+                            <img className='icon' src='images/icons/github.svg' alt='github'></img>
                         </div>
-                        <div className='field'>
-                            <label>Tell me your thoughts :D</label>
-                            <textarea></textarea>
+                        <div>
+                            <img className='icon' src='images/icons/insta.svg' alt='insta'></img>
+                            <img className='icon' src='images/icons/facebook.svg' alt='facebook'></img>
                         </div>
-                        <button onClick={e => handleSubmitButton(e)}>Submit</button>
-                    </form>
+                    </div>
                 </div>
-                <img src='sd' alt='contact-img'></img>
-            </section>
-        </main>
+            </div>
+        </section>
     );
 }

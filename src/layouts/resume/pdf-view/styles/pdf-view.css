@@ -6,5 +6,4 @@
 .pdf-view .card-expand .expandable.active {
     padding: 2rem;
     opacity: 1;
-    max-height: 80vh;
 }

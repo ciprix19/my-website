@@ -4,16 +4,15 @@ type ImageType ={
     alt: string;
 }
 type SectionTwoColumnImageType = {
-    sectionColor: string;
     isWrapped: boolean;
     isImageFirst: boolean
     img: ImageType;
     sectionSubTitle: string;
     list: Array<string>;
 }
-export default function SectionTwoColumnImage({ sectionColor, isWrapped, isImageFirst, img, sectionSubTitle, list } : SectionTwoColumnImageType) {
+export default function SectionTwoColumnImage({ isWrapped, isImageFirst, img, sectionSubTitle, list } : SectionTwoColumnImageType) {
     return (
-        <section className={sectionColor === 'gray' ? 'gray-section' : ''}>
+        <section>
             <div className={`two-column-layout ${isWrapped ? 'wrapper' : ''}`}>
                 {isImageFirst ? (
                     <>

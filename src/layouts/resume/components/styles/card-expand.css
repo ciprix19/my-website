@@ -13,38 +13,27 @@
 
 /* use auto for max-height */
 .card-expand .expandable {
-    /* overflow: hidden;    */
-    border-top: 0.2rem var(--color-accent-strong) solid;
-    /* opacity: 0; */
-    /* max-height: 0; */
-    /* height: auto; */
-    /* transition:
-        padding .5s ease,
-        max-height .5s ease,
-        opacity .3s ease; */
-    /* scale: 0; */
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* max-height: 0; */
-    max-height: 0;
+    /* overflow: hidden; */
+    border-top: 0.2rem var(--color-accent-strong) solid;
+    padding: 0;
+    height: 0;
     transform: scaleY(0);
     transform-origin: top;
     transition:
-        max-height 1s ease,
-        /* padding 1s ease, */
-        /* transform 0.1s ease; */
+        padding 1s ease,
+        height 1s ease,
+        transform 1s ease;
 
 }
 /* starting-style!!! */
 .card-expand .expandable.active {
-    /* padding: 2rem; */
-    /* opacity: 1;
-    max-height: 90vh; */
-    /* max-height: 30px; */
-    /* transform: scaleY(1); */
-    max-height: 100%;
+    padding: 2rem;
+    opacity: 1;
+    height: 100%;
+    transform: scaleY(1);
 }
 
 .expand-button {
@@ -56,6 +45,6 @@
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     /* in loc de overflow hidden in .card-expand .expandable */
-    z-index: 3;
-    position: relative;
+    /* z-index: 3; */
+    /* position: relative; */
 }

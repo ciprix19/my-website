@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import './styles/not-found.css'
 
 export default function NotFound() {
@@ -9,7 +8,7 @@ export default function NotFound() {
                 <br></br>
                 <img src='images/business-cat-small.jpg'></img>
                 <br></br>
-                <p>Sorry, the page you are looking for does not exist. <Link to="/"><u>Go back home</u></Link>.</p>
+                <p>Sorry, the page you are looking for does not exist. <a><u>Go back home</u></a>.</p>
             </section>
         </main>
     );

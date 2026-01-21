@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './styles/header.css'
 import { useRef, useState } from 'react';
 
@@ -13,7 +12,8 @@ export default function Header() {
     return (
         <header className='main-header'>
             <div className='nav-wrapper wrapper'>
-                <Link to='/'><img src='images/linkedin-64x64.jpg' alt='logo'></img></Link>
+                {/* <img src='images/linkedin-64x64.jpg' alt='logo'></img> */}
+                <p>CB</p>
                 <button className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle navigation menu" aria-expanded={isMenuOpen}>
                     <span className="bar"></span>
                     <span className="bar"></span>
@@ -21,31 +21,29 @@ export default function Header() {
                 </button>
                 <nav className='primary-navigation'>
                     <ul ref={ref} className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-                        <li><a href='#about'>aboutabout</a></li>
-                        <li><Link to='/about' onClick={() => setIsMenuOpen(false)}>about</Link></li>
-                        <li><Link to='/resume' onClick={() => setIsMenuOpen(false)}>resume</Link></li>
-                        {/* <li><Link to='/guitar' onClick={() => setIsMenuOpen(false)}>guitar</Link></li> */}
-                        <li><Link to='/contact' onClick={() => setIsMenuOpen(false)}>contact</Link></li>
+                        <li><a href='#about'>about</a></li>
+                        <li><a href='#resume'>resume</a></li>
+                        <li><a href='#contact'>contact</a></li>
                         <li>
                             <ul className='socials'>
                                 <li>
                                     <a href='https://www.linkedin.com/in/ciprix19/' target='_blank'>
-                                        <img src='images/insta-32x32.png' alt='linkedin'></img>
+                                        <img className='icon' src='images/icons/linkedin.svg' alt='linkedin'></img>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='https://github.com/ciprix19' target='_blank'>
-                                        <img src='images/insta-32x32.png' alt='github'></img>
+                                        <img className='icon' src='images/icons/github.svg' alt='github'></img>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='https://www.instagram.com/cipri_.b/' target='_blank'>
-                                        <img src='images/insta-32x32.png' alt='insta'></img>
+                                        <img className='icon' src='images/icons/insta.svg' alt='insta'></img>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='https://www.facebook.com/cipri.barbuta/' target='_blank'>
-                                        <img src='images/insta-32x32.png' alt='fb'></img>
+                                        <img className='icon' src='images/icons/facebook.svg' alt='facebook'></img>
                                     </a>
                                 </li>
                             </ul>

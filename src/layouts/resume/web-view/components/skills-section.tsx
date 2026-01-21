@@ -1,4 +1,4 @@
-import SectionHeader from "../../components/section-header";
+import DivHeader from "../../components/div-header";
 import './styles/skills-section.css'
 import CardButtonExpand from "../../components/card-expand";
 
@@ -34,12 +34,12 @@ function SkillsForCategory({ category } : { category: string }) {
 
 export default function SkillsCategoryDisplay() {
     return (
-        <SectionHeader sectionColor={'gray'} isWrapped={true} sectionTitle={'CORE ARSENAL'}>
+        <DivHeader isWrapped={true} sectionTitle={'CORE ARSENAL'}>
             <div className='skills-category-section'>
                 {Object.keys(skillsCategories).map(category => {
                     return (<SkillsForCategory key={category} category={category}/>);
                 })}
             </div>
-        </SectionHeader>
+        </DivHeader>
     );
 }

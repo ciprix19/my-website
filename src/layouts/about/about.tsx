@@ -3,7 +3,7 @@ import './styles/about.css'
 
 function AboutSection() {
     return (
-        <section>
+        <section id='about'>
             <div className='two-column-layout wrapper'>
                 <div>
                     <h1>About</h1>
@@ -21,10 +21,10 @@ function AboutSection() {
 export default function About() {
 
     return (
-        <main id='about' className='about'>
+        <>
             <AboutSection></AboutSection>
             <SectionTwoColumnImage
-                sectionColor='gray' isWrapped={true} isImageFirst={false}
+                isWrapped={true} isImageFirst={true}
                 img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
                 sectionSubTitle={'Area of expertise'}
                 list={[
@@ -35,7 +35,7 @@ export default function About() {
                 ]}
             />
             <SectionTwoColumnImage
-                sectionColor='' isWrapped={true} isImageFirst={true}
+                isWrapped={true} isImageFirst={false}
                 img={{ source: 'images/profile-pic1.jpg', alt: 'skill-pic' }}
                 sectionSubTitle={'Random facts'}
                 list={[
@@ -45,6 +45,6 @@ export default function About() {
                     'Horror genre enthusiast'
                 ]}
             />
-        </main>
+        </>
     );
 }

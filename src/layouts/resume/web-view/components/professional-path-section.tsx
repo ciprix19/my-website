@@ -1,18 +1,19 @@
-import SectionHeader from "../../components/section-header";
+import DivHeader from "../../components/div-header";
 
 type ProfessionalPathEntryType = {
     position: String;
     company: String;
     location: String;
+    imgSource: String;
     startDate: String;
     endDate: String;
     description: String;
 }
-function ProfessionalPathEntry({ position, company, location, startDate, endDate, description } : ProfessionalPathEntryType) {
+function ProfessionalPathEntry({ position, company, location, imgSource, startDate, endDate, description } : ProfessionalPathEntryType) {
     return (
         <div className='card-entry'>
             <div className='icon-column'>
-                <img src='images/insta-32x32.png' alt='job' />
+                <img className='icon' src={`images/${imgSource}`} alt='job' />
             </div>
             <div>
                 <h3>{position}</h3>
@@ -27,12 +28,13 @@ function ProfessionalPathEntry({ position, company, location, startDate, endDate
 }
 export default function ProfessionalPathSection() {
     return (
-        <SectionHeader sectionColor={'gray'} isWrapped={true} sectionTitle={'PROFESSIONAL PATH'}>
+        <DivHeader isWrapped={true} sectionTitle={'PROFESSIONAL PATH'}>
             <div className='card'>
                 <ProfessionalPathEntry
                     position={'Cloud Engineer L1 - GCP'}
                     company={'Cognizant Softvision'}
                     location={'Bucharest, Romania'}
+                    imgSource={'/icons/cloud.svg'}
                     startDate={'May 2024'}
                     endDate={'September 2025'}
                     description={'Provided advanced technical support on over 200 tickets for Apigee X and Apigee Hybrid platforms across both production and development environments.'}
@@ -41,11 +43,12 @@ export default function ProfessionalPathSection() {
                     position={'Frontend Developer Intern'}
                     company={'Accenture Industrial Software Solution SA'}
                     location={'Cluj-Napoca, Romania'}
+                    imgSource={'/icons/web-dev.svg'}
                     startDate={'August 2022'}
                     endDate={'September 2022'}
-                    description={'Demonstrated leadership in the design and development of a secure, Angular-based frontend application for API key management.'}
+                    description={'Participated in the design and development of a secure, Angular-based frontend application for API key management.'}
                     />
             </div>
-        </SectionHeader>
+        </DivHeader>
     );
 }

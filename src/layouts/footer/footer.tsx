@@ -1,30 +1,29 @@
-import { Link } from 'react-router-dom';
 import './styles/footer.css'
 
 export default function Footer() {
     return (
         <footer>
-            <Link to='/'>© 2026 ciprianbarbuta@gmail.com</Link>
+            <a>© 2026 ciprianbarbuta@gmail.com</a>
             <nav>
                 <ul>
                     <li>
                         <a href='https://www.linkedin.com/in/ciprix19/' target='_blank'>
-                            <img src="images/insta-32x32.png" alt="linkedin"></img>
+                            <img className='icon' src='images/icons/linkedin.svg' alt='linkedin'></img>
                         </a>
                     </li>
                     <li>
                         <a href='https://github.com/ciprix19' target='_blank'>
-                            <img src="images/insta-32x32.png" alt="github"></img>
+                            <img className='icon' src='images/icons/github.svg' alt='github'></img>
                         </a>
                     </li>
                     <li>
                         <a href='https://www.instagram.com/cipri_.b/' target='_blank'>
-                            <img src="images/insta-32x32.png" alt="insta"></img>
+                            <img className='icon' src='images/icons/insta.svg' alt='insta'></img>
                         </a>
                     </li>
                     <li>
                         <a href='https://www.facebook.com/cipri.barbuta/' target='_blank'>
-                            <img src="images/insta-32x32.png" alt="fb"></img>
+                            <img className='icon' src='images/icons/facebook.svg' alt='facebook'></img>
                         </a>
                     </li>
                 </ul>

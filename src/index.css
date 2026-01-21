@@ -6,7 +6,6 @@
 
 html {
     font-size: clamp(16px, 1vw, 24px);
-    height: 100%;
     scroll-behavior: smooth;
 }
 
@@ -39,19 +38,6 @@ html {
 body {
     margin: 0;
     font-size: 1rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-/* stretches the page on the whole viewport */
-.content {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-main {
-    flex: 1 0 auto;
-    display: grid;
 }
 
 h1 {
@@ -70,6 +56,7 @@ input, textarea {
     outline: none;
     font-family: "Merriweather", system-ui, Avenir, Helvetica, Arial, sans-serif;
     padding: 0.5rem;
+    border-radius: 1rem;
 }
 input:focus, input:focus-visible, textarea:focus, textarea:focus-visible {
     border: 0.2rem solid var(--color-accent-medium);
@@ -108,6 +95,7 @@ button:hover {
 }
 button:disabled {
     background-color: var(--color-background-medium);
+    cursor: default;
 }
 
 img {
@@ -118,6 +106,10 @@ img {
 section {
     padding-inline: 5rem;
     padding-block: 5rem;
+}
+section:nth-of-type(2n) {
+    background-color: var(--color-background-medium);
+    outline: 0.1rem var(--color-border) solid;
 }
 
 @media (prefers-color-scheme: light) {
